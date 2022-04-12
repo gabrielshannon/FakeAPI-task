@@ -1,0 +1,223 @@
+@import "./../../styles/varibles.scss";
+
+.photoGrid {
+  background: $bg;
+}
+
+.box {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// Card Component
+
+.item {
+  touch-action: none;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+  padding: 35px;
+  transition: all 500ms linear;
+}
+
+.cardFront {
+  width: 65%;
+  height: auto;
+  top: 2vh;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 218, 218);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+  border-radius: 20px;
+  flex-direction: column;
+  padding-left: 18px;
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  cursor: grab;
+}
+
+.cardFront:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.titleBar {
+  padding: 2px;
+  font-family: "School-Serif", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  color: rgb(63, 63, 63);
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.dateBar:hover {
+  margin-left: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tagBar:hover {
+  margin-left: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.titleBar:hover {
+  margin-left: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.item2 {
+  grid-area: overlap;
+  display: flex;
+  position: absolute;
+  right: -20%;
+  top: 12px;
+  flex-direction: column;
+  padding-top: -1000px;
+  font-size: 0.9vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dateBar {
+  padding: 2px;
+  font-family: "School-Serif", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 20px;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tagBar {
+  padding: 2px;
+  font-family: "School-Serif", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(167, 167, 167);
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(63, 63, 63);
+}
+
+.item1 {
+  grid-area: overlap;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  bottom: 4px;
+  left: -14%;
+}
+
+.imageFrame {
+  width: 114%;
+  height: 109%;
+  grid-area: overlap;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.item img:hover {
+  margin-left: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+// .Navigation {
+//   width: 90%;
+//   max-width: calc(90vh * 1.78);
+//   justify-content: center;
+//   display: flex;
+//   margin: 0.5% auto;
+//   user-select: none;
+// }
+
+// .PositionIndicator {
+//   box-sizing: border-box;
+//   width: 15px;
+//   height: 15px;
+//   border-radius: 50%;
+//   margin: 2px;
+//   border: solid rgb(201, 201, 201) 1px;
+//   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+// }
+
+// .PositionIndicator:hover {
+//   background: #ff0000;
+//   cursor: pointer;
+// }
+
+// .PositionIndicator:active {
+//   background-color: #bd2020;
+// }
+
+// .CurrentPosition {
+//   background: #ff0000;
+// }
+
+// .ag {
+//   font-family: "Tiny-font", sans-serif;
+//   border: 1px solid black;
+//   border-radius: 10px;
+//   padding: 3px;
+//   font-weight: bold;
+//   font-size: 24px;
+// }

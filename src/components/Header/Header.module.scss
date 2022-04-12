@@ -1,0 +1,8 @@
+@import "./../../styles/varibles.scss";
+
+.header {
+  font-size: calc(1vw + 1.5vh + 1vmin);
+  padding-left: 5%;
+  padding-top: 5%;
+  color: $text;
+}

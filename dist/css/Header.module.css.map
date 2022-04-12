@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,4EAAI;ADEZ,AAAA,OAAO,CAAC;EACN,SAAS,EAAE,yBAAyB;EACpC,YAAY,EAAE,EAAE;EAChB,WAAW,EAAE,EAAE;EACf,KAAK,ECDA,OAAe;CDErB",
+    "sources": [
+        "../../src/components/Header/Header.module.scss",
+        "../../src/styles/varibles.scss"
+    ],
+    "names": [],
+    "file": "Header.module.css"
+}
