@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 .photoGrid {
   background: #ffffff;
+  padding: 25px;
 }
 
 .box {
@@ -91,32 +92,6 @@
   transition: all 0.25s ease;
 }
 
-.titleBar {
-  padding: 2px;
-  font-family: "School-Serif", sans-serif;
-  background-color: white;
-  border: 1px solid #a7a7a7;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-          box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  color: #3f3f3f;
-  border-radius: 20px;
-  text-align: left;
-  padding-left: 10px;
-  margin-left: 10px;
-  padding-right: 10px;
-}
-
-.dateBar:hover {
-  margin-left: 5px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
 .tagBar:hover {
   margin-left: 5px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -126,52 +101,6 @@
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-}
-
-.titleBar:hover {
-  margin-left: 5px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-
-.item2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: overlap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: -20%;
-  top: 12px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: -1000px;
-  font-size: 0.9vw;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.dateBar {
-  padding: 2px;
-  font-family: "School-Serif", sans-serif;
-  background-color: white;
-  border: 1px solid #a7a7a7;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-          box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  border-radius: 20px;
-  padding-top: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .tagBar {

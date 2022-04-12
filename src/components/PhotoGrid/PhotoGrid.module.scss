@@ -2,6 +2,7 @@
 
 .photoGrid {
   background: $bg;
+  padding: 25px;
 }
 
 .box {
@@ -68,67 +69,12 @@
   transition: all 0.25s ease;
 }
 
-.titleBar {
-  padding: 2px;
-  font-family: "School-Serif", sans-serif;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(167, 167, 167);
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  color: rgb(63, 63, 63);
-  border-radius: 20px;
-  text-align: left;
-  padding-left: 10px;
-  margin-left: 10px;
-  padding-right: 10px;
-}
-
-.dateBar:hover {
-  margin-left: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
 .tagBar:hover {
   margin-left: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   transform: scale(1.05);
   cursor: pointer;
   transition: all 0.25s ease;
-}
-
-.titleBar:hover {
-  margin-left: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.item2 {
-  grid-area: overlap;
-  display: flex;
-  position: absolute;
-  right: -20%;
-  top: 12px;
-  flex-direction: column;
-  padding-top: -1000px;
-  font-size: 0.9vw;
-  display: flex;
-  align-items: flex-end;
-}
-
-.dateBar {
-  padding: 2px;
-  font-family: "School-Serif", sans-serif;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(167, 167, 167);
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  border-radius: 20px;
-  padding-top: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .tagBar {
@@ -180,44 +126,3 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
-
-// .Navigation {
-//   width: 90%;
-//   max-width: calc(90vh * 1.78);
-//   justify-content: center;
-//   display: flex;
-//   margin: 0.5% auto;
-//   user-select: none;
-// }
-
-// .PositionIndicator {
-//   box-sizing: border-box;
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 50%;
-//   margin: 2px;
-//   border: solid rgb(201, 201, 201) 1px;
-//   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-// }
-
-// .PositionIndicator:hover {
-//   background: #ff0000;
-//   cursor: pointer;
-// }
-
-// .PositionIndicator:active {
-//   background-color: #bd2020;
-// }
-
-// .CurrentPosition {
-//   background: #ff0000;
-// }
-
-// .ag {
-//   font-family: "Tiny-font", sans-serif;
-//   border: 1px solid black;
-//   border-radius: 10px;
-//   padding: 3px;
-//   font-weight: bold;
-//   font-size: 24px;
-// }
