@@ -15,8 +15,6 @@ const PhotoGrid = () => {
       });
   }, []);
 
-  console.log(myData);
-
   return (
     <div className={styles.photoGrid}>
       <div class={styles.grid}>
